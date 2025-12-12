@@ -1,0 +1,127 @@
+:root{
+    --colorPrimary:#242424;
+    --colorSecondary:#545454;
+    --colorWarning:#FCFC62;
+    --colorError:#A4031F;
+font-family: "Poppins", sans-serif;
+justify-content: center;
+}
+
+body{
+    width:100%;
+    height: 100%;
+     
+    background-color: rgb(255, 249, 249);
+   text-align: center;
+}
+
+header{
+ line-height: 15px;
+}
+
+
+.heading{
+  color:var(--colorPrimary);
+   
+}
+.subheading{
+    color: var(--colorSecondary);
+}
+
+hr{
+    width: 32%;
+    
+    color: var(--arrow-width);
+}
+
+.article1{
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}
+/* From Uiverse.io by adamgiebl */ 
+.input-wrapper input {
+  background-color: #eee;
+  border: black 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 13em;
+  border-radius: 1rem;
+  
+  color: var(--arrow-stroke);
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: var(--arrow-stroke);
+}
+
+
+
+.btn{
+margin: 10px;
+}
+
+
+/* From Uiverse.io by satyamchaudharydev */ 
+
+button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s ;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
